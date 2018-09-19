@@ -5,7 +5,6 @@
  */
 package Builder;
 
-import Fabricas.Personaje;
 
 /**
  *
@@ -13,12 +12,13 @@ import Fabricas.Personaje;
  */
 public abstract class Construir {
     
-    protected Personaje pers;
+    protected Posicion pos;
 
-    public Personaje getTour() {
-        return pers;
+    public Posicion getPosicion() {
+        return pos;
     }
     
+    public abstract void ContruirPosicion();
     public abstract void ContruirCuerpo();
     public abstract void ContruirArma();
     public abstract void ContruirEscudo();

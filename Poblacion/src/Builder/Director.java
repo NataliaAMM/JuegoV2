@@ -5,7 +5,6 @@
  */
 package Builder;
 
-import Fabricas.Personaje;
 
 /**
  *
@@ -18,11 +17,12 @@ public class Director {
         this.constructor = constructor;
     }
     
-     public Personaje getTour(){
-        return constructor.getTour();
+     public Posicion getPosicion(){
+        return constructor.getPosicion();
     }
     
-    public void construirTour(){
+    public void construirPersonaje(){
+        constructor.ContruirPosicion();
         constructor.ContruirCuerpo();
         constructor.ContruirArma();
         constructor.ContruirEscudo();

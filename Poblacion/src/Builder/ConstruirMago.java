@@ -9,7 +9,7 @@ package Builder;
  *
  * @author Estudiantes
  */
-public class ConstruirHada extends Construir {
+public class ConstruirMago extends Construir {
 
     @Override
     public void ContruirPosicion() {

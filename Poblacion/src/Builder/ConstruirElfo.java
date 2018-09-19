@@ -12,18 +12,28 @@ package Builder;
 public class ConstruirElfo extends Construir {
 
     @Override
+    public void ContruirPosicion() {
+        pos = new Posicion();
+    }
+
+    @Override
     public void ContruirCuerpo() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        pos.addCuerpo(0);
+        pos.addCuerpo(0);
     }
 
     @Override
     public void ContruirArma() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        pos.addArma(0);
+        pos.addArma(0);
     }
 
     @Override
     public void ContruirEscudo() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        pos.addEscudo(0);
+        pos.addEscudo(0);
     }
+
+    
     
 }

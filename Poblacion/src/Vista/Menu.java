@@ -12,6 +12,7 @@ import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JTextField;
 
 /**
  *
@@ -20,6 +21,9 @@ import javax.swing.JLabel;
 public class Menu extends JFrame {
     Personaje personaje;
     int per;
+    String cant;
+    public JLabel label = new JLabel("¿Cuántos desea crear?");
+    public JTextField cantclon = new JTextField("");
     public JButton btnHumano = new JButton("Humano");
     public JButton btnOgro = new JButton("Ogro");
     public JButton btnHada = new JButton("Hada");
@@ -31,6 +35,13 @@ public class Menu extends JFrame {
         Container c= getContentPane();
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         c.setLayout(null);
+        
+         c.add(label);
+        label.setBounds(150,150,200,50);
+        
+        c.add(cantclon);
+        cantclon.setBounds(180,200,60,40);
+        
         
         c.add(desicion);
         desicion.setBounds(150, 15, 200, 50);
